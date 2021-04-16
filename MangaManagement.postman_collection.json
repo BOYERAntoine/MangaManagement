@@ -1,0 +1,587 @@
+{
+	"info": {
+		"_postman_id": "a13f6190-dd7c-400b-b995-f4390a399e2f",
+		"name": "MangaManagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Author",
+			"item": [
+				{
+					"name": "create Author",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "firstName",
+									"value": "Akira",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "Toriyama",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/authors/createAuthor",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"authors",
+								"createAuthor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllAuthors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/authors",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"authors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Author by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/authors/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"authors",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Auhor by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/authors/4",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"authors",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Author",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "firsrtName",
+									"value": "enVrai c'est pas si grave",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "man",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/authors/updateAuthor",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"authors",
+								"updateAuthor"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Manga",
+			"item": [
+				{
+					"name": "create Manga",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "DBZ",
+									"type": "text"
+								},
+								{
+									"key": "year",
+									"value": "Vieux",
+									"type": "text"
+								},
+								{
+									"key": "cover",
+									"value": "super dessin",
+									"type": "text"
+								},
+								{
+									"key": "author",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "authorId",
+									"value": "9",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/mangas/createManga",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"mangas",
+								"createManga"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllMangas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/mangas",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"mangas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Manga by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/mangas/22",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"mangas",
+								"22"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Manga by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/mangas/3",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"mangas",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Manga",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "DBZKAI",
+									"type": "text"
+								},
+								{
+									"key": "year",
+									"value": "giga vieux",
+									"type": "text"
+								},
+								{
+									"key": "cover",
+									"value": "cover en HD ",
+									"type": "text"
+								},
+								{
+									"key": "author",
+									"value": "9",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/mangas/updateManga",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"mangas",
+								"updateManga"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "mail",
+									"value": "aaaaantoineb72974@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Not24get",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/users/createUser",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"createUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllUsers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/users",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get User by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/users/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/users/3",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "mail",
+									"value": "antoine.boyer@a2display.fr",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Not24get",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/mangas/updateUser",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"mangas",
+								"updateUser"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Chapter",
+			"item": [
+				{
+					"name": "create Chapter",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "le dernier chapitre ",
+									"type": "text"
+								},
+								{
+									"key": "pages",
+									"value": "15",
+									"type": "text"
+								},
+								{
+									"key": "manga",
+									"value": "22",
+									"type": "text"
+								},
+								{
+									"key": "authorId",
+									"value": "9",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/chapters/createChapter",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"chapters",
+								"createChapter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllChapters",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/chapters",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"chapters"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Chapter by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/mangas/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"mangas",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Chapter by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/chapters/3",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"chapters",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Chapter",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "PTDR EN FAIT IL RESTE UN ARC ",
+									"type": "text"
+								},
+								{
+									"key": "pages",
+									"value": "16",
+									"type": "text"
+								},
+								{
+									"key": "manga",
+									"value": "22",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/chapters/updateChapter",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"chapters",
+								"updateChapter"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
