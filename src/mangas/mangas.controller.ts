@@ -36,7 +36,7 @@ export class MangasController {
   async updateManga(@Body() updateMangaDTO: UpdateMangaDto):Promise<Manga> {
     const editedManga = await this.getMangaById(updateMangaDTO.id);
     editedManga.title= updateMangaDTO.title;
-    editedManga.year= updateMangaDTO.year;
+    editedManga.year= updateMangaDTO.year; 
     editedManga.cover =updateMangaDTO.cover;
     editedManga.author =updateMangaDTO.author;
     await editedManga.save();
