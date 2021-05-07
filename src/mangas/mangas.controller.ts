@@ -20,10 +20,7 @@ export class MangasController {
     @Post('/createManga')
     @UsePipes(ValidationPipe)
     createManga(@Body() createMangaDto: CreateMangaDto) {
-      console.log("Create Manga");
-      if(createMangaDto){
-        return this.mangasService.createManga(createMangaDto);
-      }
+      console.log("Create Manga",createMangaDto);
       return this.mangasService.createManga(createMangaDto);
     }
 

@@ -21,9 +21,6 @@ export class ChaptersController {
     @UsePipes(ValidationPipe)
     createChapter(@Body() createChapterDto: CreateChapterDto) {
       console.log("Create Chapter");
-      if(createChapterDto){
-        return this.chaptersService.createChapter(createChapterDto);
-      }
       return this.chaptersService.createChapter(createChapterDto);
     }
 

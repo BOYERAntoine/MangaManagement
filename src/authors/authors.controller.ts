@@ -21,9 +21,6 @@ export class AuthorsController {
     @UsePipes(ValidationPipe)
     createAuthor(@Body() createAuthorDto: CreateAuthorDto) {
       console.log("Create Author");
-      if(createAuthorDto){
-        return this.authorsService.createAuthor(createAuthorDto);
-      }
       return this.authorsService.createAuthor(createAuthorDto);
     }
 
